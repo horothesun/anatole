@@ -1,4 +1,4 @@
-<div class="page-top animated fadeInDown">
+<div class="page-top {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
     <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -25,7 +25,7 @@
         {{ end }}
         <li class="theme-switch-item">
             <a class="theme-switch" title="Switch Theme">
-                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a>
         </li>
     </ul>
